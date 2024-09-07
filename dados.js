@@ -35,7 +35,7 @@ let dados = [
         titulo: "Elden Ring",
         descricao: "Um RPG de ação em mundo aberto desenvolvido por FromSoftware, conhecido por sua dificuldade e combate estratégico.",
         link: "https://store.steampowered.com/app/1245620/Elden_Ring/",
-        tags: "rpg soulslike mundo-aberto fantasia",
+        tags: "rpg soulslike mundo aberto fantasia",
         notameta: 96,
         notasteam: 92
       },
@@ -43,7 +43,7 @@ let dados = [
         titulo: "Cyberpunk 2077",
         descricao: "Um RPG de ação em mundo aberto futurista, onde você explora a cidade de Night City e toma decisões que moldam a história.",
         link: "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
-        tags: "rpg cyberpunk mundo-aberto futuro",
+        tags: "rpg cyberpunk mundo aberto futuro",
         notameta: 86,
         notasteam: 83
       },
@@ -75,7 +75,7 @@ let dados = [
         titulo: "Starfield",
         descricao: "Um RPG de mundo aberto espacial desenvolvido pela Bethesda Game Studios, onde você explora a galáxia e constrói sua própria história.",
         link: "https://store.steampowered.com/app/1675200/Starfield/",
-        tags: "rpg espacial mundo-aberto",
+        tags: "rpg espacial mundo aberto",
         notameta: 83,
         notasteam: 59
       },
