@@ -4,7 +4,7 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #17002a; /* Cor de fundo da página */
+    background-color: #14001f; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -19,7 +19,7 @@ h1 {
     font-size: 3.5rem; /* Tamanho da fonte */
     color: #2baeff; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    letter-spacing: 0.2rem; /* Espaçamento entre letras */
 }
 
 /* Estiliza as seções da página */
@@ -59,21 +59,27 @@ section button {
 section button:hover {
     background-color: #114667; /* Muda a cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+    color: #000000;
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas com largura mínima de 200px */
+    gap: 20px; /* Espaço entre os itens */
+    width: 80rem; /* Largura máxima da caixa de resultados */
+    height: 40vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
+    margin-top: 0rem; /* Espaçamento acima da caixa de resultados */
+    padding: 2rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
+    background: #000000; /* Cor de fundo dos itens */
+    height: 40vh;
+    overflow-y: auto;
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
@@ -82,14 +88,16 @@ section button:hover {
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
+    overflow-x: auto;
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: #2baeff; /* Cor do texto */
+    margin: 0rem;
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #30475E; /* Cor do texto dos links */
+    color: #3353d3; /* Cor do texto dos links */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
@@ -99,8 +107,23 @@ section button:hover {
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B; /* Cor do texto */
-    margin: 0.5rem 0; /* Margem acima e abaixo */
+    overflow: auto;
+    color: #c6c6c6; /* Cor do texto */
+    margin: 0 rem 0; /* Margem acima e abaixo */
+}
+.nota-meta{
+    margin: 0.1rem;
+    background: #141414; /* Cor de fundo dos itens */
+    border-radius: 0.2rem; /* Borda arredondada */
+    color: #ffffff;
+    padding: 0.5rem;
+}
+.nota-valor{
+    background: #00ff1a; /* Fundo amarelo para o valor da nota */
+    color: #151515;
+    border-radius: 0.6rem;
+    padding: 0.8rem;
+    display: inline-block;
 }
 
 /* Estiliza o rodapé da página */
@@ -110,7 +133,7 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+    position: sticky; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }
